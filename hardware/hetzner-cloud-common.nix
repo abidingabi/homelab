@@ -1,5 +1,7 @@
 { modulesPath, ... }:
 {
+  system.stateVersion = "22.05";
+
   imports = [ (modulesPath + "/profiles/qemu-guest.nix") ];
   boot.loader.grub.device = "/dev/sda";
   boot.initrd.availableKernelModules = [ "ata_piix" "uhci_hcd" "xen_blkfront" "vmw_pvscsi" ];
@@ -12,13 +14,13 @@
   networking = {
     hostName = "hetzner-cloud-common";
 
-    interfaces.ens3.ipv6.addresses = [{
+    interfaces.enp1s0.ipv6.addresses = [{
       address = "2a01:4ff:f0:bb04::/64";
       prefixLength = 64;
     }];
     defaultGateway6 = {
       address = "fe80::1";
-      interface = "ens3";
+      interface = "enp1s0";
     };
   };
 }
