@@ -10,7 +10,7 @@
       }
 
       static.dogbuilt.net {
-        root * /public
+        root * /srv/static
         file_server browse
       }
     '';
