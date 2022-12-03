@@ -14,6 +14,7 @@
 
           ./services/ssh.nix
           ./services/web-server.nix
+          ./services/cgit.nix
 
           signal-flags.nixosModules.x86_64-linux.signal-flags
         ];

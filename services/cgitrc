@@ -1,0 +1,24 @@
+root-title=dogbuilt
+root-desc=(abiding)abi(gail)’s code
+logo=
+
+enable-commit-graph=1
+
+enable-blame=1
+enable-commit-graph=1
+enable-subject-links=1
+enable-follow-links=1
+enable-index-owner=0
+repository-sort=age
+branch-sort=age
+
+##
+## Search for these files in the root of the default branch of repositories
+## for coming up with the about page:
+##
+readme=:README.md
+
+# Repos
+repo.url=websites/gm0
+repo.path=/srv/git/websites/gm0.git
+repo.desc=The most comprehensive guide for FTC teams
