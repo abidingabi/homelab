@@ -6,10 +6,12 @@
 
     extraConfig = ''
       signalflags.dogbuilt.net {
+        encode zstd gzip
         reverse_proxy localhost:3000
       }
 
       static.dogbuilt.net {
+        encode zstd gzip
         root * /srv/static
         file_server browse
       }
