@@ -15,6 +15,8 @@
           ./services/ssh.nix
           ./services/web-server.nix
 
+          ./services/rss.nix
+
           signal-flags.nixosModules.x86_64-linux.signal-flags
         ];
       };

@@ -10,6 +10,11 @@
         reverse_proxy localhost:3000
       }
 
+      rss.dogbuilt.net {
+        encode zstd gzip
+        reverse_proxy localhost:3001
+      }
+
       static.dogbuilt.net {
         encode zstd gzip
         root * /srv/static
