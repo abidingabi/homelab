@@ -1,7 +1,6 @@
 {
   inputs = {
-    nixpkgs.url = "github:NixOS/nixpkgs/nixos-22.05";
-
+    nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
     signal-flags.url = "github:abidingabi/signal-flags";
   };
 
@@ -13,6 +12,7 @@
           ./hardware/hetzner-cloud-common.nix
 
           ./services/ssh.nix
+          ./services/headscale.nix
           ./services/web-server.nix
 
           ./services/rss.nix
