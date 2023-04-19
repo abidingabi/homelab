@@ -12,4 +12,12 @@
       LISTEN_ADDR = "127.0.0.1:4001";
     };
   };
+
+  services.caddy.extraConfig = ''
+    http://rss.priv.dogbuilt.net rss.priv.dogbuilt.net {
+      tls internal
+      encode zstd gzip
+      reverse_proxy localhost:4001
+    }
+  '';
 }

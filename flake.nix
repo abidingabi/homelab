@@ -18,6 +18,14 @@
           ./services/rss.nix
 
           signal-flags.nixosModules.x86_64-linux.signal-flags
+          {
+            services.caddy.extraConfig = ''
+              signalflags.dogbuilt.net {
+                encode zstd gzip
+                reverse_proxy localhost:3000
+              }
+            '';
+          }
         ];
       };
     };

@@ -26,9 +26,16 @@
   };
   environment.systemPackages = [ config.services.headscale.package ];
 
+  services.caddy.extraConfig = ''
+    hs.dogbuilt.net {
+      reverse_proxy * localhost:4000
+    }
+  '';
+
+  # Set up tailscale
+  services.tailscale.enable = true;
+
   # Enable acting as an exit node
   boot.kernel.sysctl."net.ipv4.ip_forward" = 1;
   boot.kernel.sysctl."net.ipv6.conf.all.forwarding" = 1;
-
-  services.tailscale.enable = true;
 }
