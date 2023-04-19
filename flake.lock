@@ -40,35 +40,19 @@
     },
     "signal-flags": {
       "inputs": {
-        "nixpkgs": "nixpkgs_2",
-        "utils": "utils"
+        "nixpkgs": "nixpkgs_2"
       },
       "locked": {
-        "lastModified": 1668057666,
-        "narHash": "sha256-SYUNOVRqriTlcLltQzbNeDuACkDCNWQu17b+eNbUzpU=",
+        "lastModified": 1681936367,
+        "narHash": "sha256-N+rQRED7YL2V3GLv6p8TONfRrYfWmL2BGalKHKnbZJI=",
         "owner": "abidingabi",
         "repo": "signal-flags",
-        "rev": "df02ade42d638bfea0222362cb8255e7257ac775",
+        "rev": "4417d20988533d960d2fcd716d47f798acf33f40",
         "type": "github"
       },
       "original": {
         "owner": "abidingabi",
         "repo": "signal-flags",
-        "type": "github"
-      }
-    },
-    "utils": {
-      "locked": {
-        "lastModified": 1653893745,
-        "narHash": "sha256-0jntwV3Z8//YwuOjzhV2sgJJPt+HY6KhU7VZUL0fKZQ=",
-        "owner": "numtide",
-        "repo": "flake-utils",
-        "rev": "1ed9fb1935d260de5fe1c2f7ee0ebaae17ed2fa1",
-        "type": "github"
-      },
-      "original": {
-        "owner": "numtide",
-        "repo": "flake-utils",
         "type": "github"
       }
     }
