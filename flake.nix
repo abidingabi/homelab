@@ -6,10 +6,10 @@
 
   outputs = { self, nixpkgs, signal-flags }: {
     nixosConfigurations = {
-      hetzner-cloud-common = nixpkgs.lib.nixosSystem {
+      lily = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
         modules = [
-          ./hardware/hetzner-cloud-common.nix
+          ./hardware/lily.nix
 
           ./services/ssh.nix
           ./services/headscale.nix

@@ -15,7 +15,7 @@
   zramSwap.enable = true;
 
   networking = {
-    hostName = "hetzner-cloud-common";
+    hostName = "lily";
 
     interfaces.enp1s0.ipv6.addresses = [{
       address = "2a01:4ff:f0:bb04::/64";
